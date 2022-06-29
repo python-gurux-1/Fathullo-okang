@@ -1,0 +1,72 @@
+oyin = [
+
+    ['R','1','2','3'],
+    ['1','*','*','*'],
+    ['2','*','*','*'],
+    ['3','*','*','*'],
+]
+print('\n')
+for i in range(9):
+    x_qator = int(input("X uchun qatorni kiriting: "))
+    x_ustun = int(input("X uchun ustuni kiriting: "))
+    oyin[x_qator][x_ustun]='x'
+    for qator in oyin:
+        for element in qator:
+            print(element,end='     ')
+        print('\n')
+    if oyin[1][1] == 'x' and oyin[1][2] =='x' and oyin[1][3]=='x':
+        print('x yutti')
+        break
+    if oyin[2][1] == 'x' and oyin[2][2] =='x' and oyin[2][3]=='x':
+        print('x yutti')
+        break
+    if oyin[3][1] == 'x' and oyin[3][2] =='x' and oyin[3][3]=='x':
+        print('x yutti')
+        break
+    if oyin[1][1] == 'x' and oyin[2][1] =='x' and oyin[3][1]=='x':
+        print('x yutti')
+        break
+    if oyin[1][1] == 'x' and oyin[2][2] =='x' and oyin[3][2]=='x':
+        print('x yutti')
+        break
+    if oyin[1][2] == 'x' and oyin[2][3] =='x' and oyin[3][3]=='x':
+        print('x yutti')
+        break
+    if oyin[1][1] == 'x' and oyin[2][2] =='x' and oyin[3][3]=='x':
+        print('x yutti')
+        break
+    if oyin[1][3] == 'x' and oyin[2][2] =='x' and oyin[1][3]=='x':
+        print('x yutti')
+        break
+
+
+    o_qator ,vbg o_ustun = int(input("0 uchun qatorni kiriting va 0 uchun ustunni kiriting:   "))
+    oyin[o_qator][o_ustun]='o'
+    for qator in oyin:
+        for element in qator:
+            print(element,end='     ')
+        print('\n')
+    if oyin[1][1] == 'o' and oyin[1][2] =='o' and oyin[1][3]=='o':
+        print('o yutti')
+        break
+    if oyin[2][1] == 'o' and oyin[2][2] =='o' and oyin[2][3]=='o':
+        print('o yutti')
+        break
+    if oyin[3][1] == 'o' and oyin[3][2] =='o' and oyin[3][3]=='o':
+        print('o yutti')
+        break
+    if oyin[1][1] == 'o' and oyin[2][1] =='o' and oyin[3][1]=='o':
+        print('o yutti')
+        break
+    if oyin[1][1] == 'o' and oyin[2][2] =='o' and oyin[3][2]=='o':
+        print('o yutti')
+        break
+    if oyin[1][2] == 'o' and oyin[2][3] =='o' and oyin[3][3]=='o':
+        print('o yutti')
+        break
+    if oyin[1][1] == 'o' and oyin[2][2] =='o' and oyin[3][3]=='o':
+        print('o yutti')
+        break
+    if oyin[1][3] == 'o' and oyin[2][2] =='o' and oyin[1][3]=='o':
+        print('o yutti')
+        break
